@@ -1,12 +1,3 @@
-def linear_search(lst, value):
-    step = 0
-    for index in range(len(lst)):
-        step += 1
-        if lst[index] == value:
-            print('It took', step, 'steps')
-            return index
-    return False
-
 def binary_search(lst, value, value_index = None, step = 0):
     midpoint = len(lst)//2
     length = len(lst)
@@ -42,6 +33,3 @@ def verify(lst, func):
             return False
     print('All is fine')
     return True
-
-lst1 = [i for i in range(1000)]
-verify(lst1, linear_search)
